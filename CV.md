@@ -12,7 +12,7 @@ My full CV is available here.
 
 **B.Sc. in Political Economy**, *[King's College London](https://www.kcl.ac.uk/)*, 2015
 
-## Professional Experience
+## Professional Experiences
 
 Aug. 2017 - Jan. 2019: **Junior Economist (Consultant)**, Skills Outlook Team, Directorate for Education and Skills, *[OECD](http://www.oecd.org)*
 
