@@ -6,7 +6,7 @@ My full CV is available here.
 
 ## Education
 
-### **Ph.D.** in Economics, [Sciences Po](https://www.sciencespo.fr/).
+#### **Ph.D.** in Economics, [Sciences Po](https://www.sciencespo.fr/).
 Advisor: [Pierre-Philippe Combes](https://www.gate.cnrs.fr/spip.php?article1024&lang=en/).
 2019- :  
 
