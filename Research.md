@@ -15,7 +15,6 @@ title: Research
 
         Pro-Vice-Chancellors (PVCs) form the second-tier leadership of UK higher education institutions. However, their role and position remain under-theorised and under-researched. The present article explores the extent to which a PVC Education role requires core expertise in education or generic managerial skills. Using a mixed-methods approach, we first establish the disciplinary backgrounds of PVCs Education in Russell Group (RG) and post-1992 institutions. Fewer than one in five PVCs Education have a disciplinary background or additional formal training in education. Second, we conducted 24 semi-structured interviews with PVCs Education, Heads of Education Departments and Heads of Learning and Teaching units. These interviews suggest the PVC Education role requires managerial skills, usually acquired in previous headships, as well as academic credibility and knowledge of institutional processes rather than particular expertise in education. In sum, generic managerial skills rather than educational expertise are paramount for understanding the profile of PVCs Education in UK universities.
     </details>
-
     <details>
       <summary>Media coverage</summary>  
 
