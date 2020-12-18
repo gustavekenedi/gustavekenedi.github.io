@@ -92,7 +92,7 @@ th, td {
 
 dt {
   color:#444;
-  font-weight:500;
+  font-weight:"bold";
 }
 
 th {
@@ -155,7 +155,7 @@ header ul a:active {
 
 strong {
   color:#222;
-  font-weight:500;
+  font-weight: "bold";
 }
 
 header ul li + li + li {
