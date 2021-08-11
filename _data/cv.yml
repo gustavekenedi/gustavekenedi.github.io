@@ -1,0 +1,71 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Name
+      value: Gustave Kenedi
+    - name: Nationality
+      value: French-American
+    - name: Languages
+      value: English (native), French (native), and Italian (fluent)
+
+- title: Research Areas
+  type: list
+  contents:
+    - My research interests are in <b>intergenerational mobility</b>, in particular its <i>measurement</i> and <i>spatial variations</i>, the underlying <i>mechanisms</i> and the <i>policies</i> that can help remediate such intergenerational inequalities.
+
+- title: Education
+  type: table
+  contents:
+    - title: Sciences Po Paris – Ph.D. in Economics
+      year: 2019-now
+      description:
+        - '<u>Advisor:</u> <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank"><b>Pierre-Philippe Combes</b></a>'
+    - title: Sciences Po Paris – M.Res. in Economics
+      year: 2015-17
+      description:
+        - '<u>Masters Thesis:</u> <a href="https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/files/Gustave%20Kenedi%20-%20Me%CC%81moire.pdf" target="_blank"><b>Intergenerational Income Mobility in France: National and Territorial Estimates</b></a>'
+        - '<u>Advisor:</u> <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank"><b>Pierre-Philippe Combes</b></a> and <a href="https://www.strategie.gouv.fr/membres/clement-dherbecourt" target="_blank"><b>Clément Dherbécourt</b></a>'
+        - Among the <a href="https://www.sciencespo.fr/ecole-doctorale/en/content/best-master-thesis-economics.html#a1" target="_blank">best masters thesis of 2016-2017</a>
+    - title: King's College London – B.Sc. in Political Economy
+      year: 2012-15
+      description:
+        - '<u>Grade:</u> <b>First-Class</b>'
+        - '<u>Undergraduate Thesis:</u> <b>Minimum Wages, Labour Market Policies, and Youth Employment: A Re-Evaluation Using Cross-Country Analysis</b>'
+        - '<u> Study Abroad (Jan. 2014-May 2014):</u> <a href="https://www.unc.edu/" target="_blank"><b>University of North Carolina, Chapell Hill</b></a>'
+
+- title: Work Experience
+  type: table
+  contents:
+    - title: 'Consultant at <a href="https://www.oecd.org/" target="_blank">Organization for Economic Cooperation and Development (OECD)</a> <br> <a href="https://www.oecd.org/skills/centre-for-skills/" target="_blank">Center for Skills</a>, Skills Outlook team'
+      year: 2017-19
+    - title: 'Research Analyst at <a href="https://www.strategie.gouv.fr/" target="_blank">France Stratégie</a> <br> Department Society and Social Policy'
+      year: 2017
+
+- title: Teaching Experience
+  type: table
+  contents:
+    - title: '<b>Introduction to Econometrics with R</b>'
+      year: 2019-now
+      description: '2nd year undergraduate'
+    - title: '<b>Fundamentals of Economics</b>'
+      year: '2021'
+      description: 'Online graduate course in public economics'
+
+- title: Extra-Curricular Activities
+  type: table
+  contents:
+    - title: '<a href="https://www.cairn.info/revue-regards-croises-sur-l-economie.htm" target="_blank"><b>Regards Croisés sur l''Économie</b></a>'
+      year: 2015-2018
+      description:
+        - Student-led economics review published by <i>La Découverte</i>.
+        - Member of the editorial team. Co-editor of issue 21 on globalisation.
+    - title: '<a href="https://en.calameo.com/accounts/4000639" target="_blank"><b>Perspectives</b></a>'
+      year: 2014-2017
+      description:
+        - Student-led economics journal.
+        - Co-founder.
+
+- title: Other Interests
+  type: list
+  contents:
+    - '<u>Hobbies:</u> Tennis, calisthenics, reading.'
