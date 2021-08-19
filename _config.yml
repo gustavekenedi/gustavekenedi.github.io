@@ -140,9 +140,9 @@ plugins:
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-twitter-plugin
-  - jekyll-sitemap
   - jekyll-seo-tag
   - jemoji
+  - jekyll-sitemap
 
 # Extras
 github: [metadata]

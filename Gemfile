@@ -8,8 +8,8 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jekyll-twitter-plugin'
     gem 'jekyll-seo-tag'
-    gem 'jekyll-sitemap'
     gem 'jemoji'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'jekyll-sitemap'
 end
