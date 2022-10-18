@@ -407,6 +407,10 @@ footer.sticky-bottom {
       .title {
         font-weight: bolder;
       }
+      .prevtitle {
+        font-style: italic;
+        font-size: 0.75em;
+      }
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
