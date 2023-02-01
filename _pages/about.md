@@ -22,3 +22,5 @@ I am a **PhD Candidate in Economics** at <a href="https://www.sciencespo.fr/depa
 In the Spring of 2022, I was fortunate to visit the <a href="https://www.ucl.ac.uk/ioe/departments-and-centres/centres/centre-education-policy-and-equalising-opportunities" target="_blank">`Centre for Education Policy and Equalising Opportunities`</a> at University College London.
 
 My research interests are in **intergenerational mobility**, in particular its *measurement* and *spatial variations*, the underlying *mechanisms* and the *policies* that can help remediate such intergenerational inequalities.
+
+You can find my CV <a href="assets/pdf/cv_en_01_2023_no_references.pdf" target="_blank">here</a>.
