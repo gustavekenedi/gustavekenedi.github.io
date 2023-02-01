@@ -17,6 +17,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a **PhD Candidate in Economics** at <a href="https://www.sciencespo.fr/department-economics/en.html" target="_blank">`Sciences Po`</a>, under the supervision of <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank">`Pierre-Philippe Combes`</a>.
+I am a **PhD Candidate in Economics** at <a href="https://www.sciencespo.fr/department-economics/en.html" target="_blank">`Sciences Po`</a>, under the supervision of <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank">`Pierre-Philippe Combes`</a>. This academic year I am a research fellow at PSE's <a href="https://www.parisschoolofeconomics.eu/en/pse-partnership-programme/chairs/education-policy-and-social-mobility-chair/" target="_blank">`Education Policy and Social Mobility Chair`</a>.
+
+In the Spring of 2022, I was fortunate to visit the <a href="https://www.ucl.ac.uk/ioe/departments-and-centres/centres/centre-education-policy-and-equalising-opportunities" target="_blank">`Centre for Education Policy and Equalising Opportunities`</a> at University College London.
 
 My research interests are in **intergenerational mobility**, in particular its *measurement* and *spatial variations*, the underlying *mechanisms* and the *policies* that can help remediate such intergenerational inequalities.

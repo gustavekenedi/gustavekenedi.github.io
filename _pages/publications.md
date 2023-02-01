@@ -2,12 +2,22 @@
 layout: page
 permalink: /research/
 title: research
-description: Ongoing research, working papers, publications and policy reports
+description: Publications, working papers, ongoing research, and policy reports
 years: [2025,2024,2023,2022,2021,2020,2019,2018]
 type: [in progress]
 nav: true
+publications: false
 ---
 
+{% if page.publications %}
+### publications
+<div class="publications">
+  {% for y in page.years %}
+    <!-- <h2 class="year">{{y}}</h2> -->
+    {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% endfor %}
+</div>
+{% endif %}
 
 ### working papers
 <div class="publications">
@@ -29,17 +39,7 @@ nav: true
 
 </div>
 
-### publications
-<div class="publications">
-
-{% for y in page.years %}
-  <!-- <h2 class="year">{{y}}</h2> -->
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
-
-</div>
-
-### policy reports
+### pre-phd publications and policy reports
 <div class="publications">
 
 {% for y in page.years %}
