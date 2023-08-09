@@ -9,15 +9,14 @@ nav: true
 publications: false
 ---
 
-{% if page.publications %}
 ### publications
 <div class="publications">
+
   {% for y in page.years %}
     <!-- <h2 class="year">{{y}}</h2> -->
     {% bibliography -f papers -q @*[year={{y}}]* %}
   {% endfor %}
 </div>
-{% endif %}
 
 ### working papers
 <div class="publications">
