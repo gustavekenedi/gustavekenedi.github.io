@@ -13,24 +13,32 @@
   contents:
     - My research interests are in <b>intergenerational mobility</b>, in particular its <i>measurement</i> and <i>spatial variations</i>, the underlying <i>mechanisms</i> and the <i>policies</i> that can help remediate such intergenerational inequalities.
 
+- title: Current Position
+  type: table
+  contents:
+    - title: Centre for Economic Performance (LSE)
+      year: 2023-now
+      description: <a href="https://cep.lse.ac.uk/_new/people/person.asp?id=11339" target="_blank">Postdoctoral Research Economist</a>
+
 - title: Education
   type: table
   contents:
-    - title: Sciences Po Paris – Ph.D. in Economics
-      year: 2019-now
+    - title: Sciences Po Paris <br> <i>Ph.D. in Economics</i>
+      year: 2019-2023
       description:
         - '<u>Advisor:</u> <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank"><b>Pierre-Philippe Combes</b></a>'
-        - '<u>Visiting (Spring 2022):</u> <a href="https://www.ucl.ac.uk/ioe/departments-and-centres/centres/centre-education-policy-and-equalising-opportunities" target="_blank"><b>UCL Centre for Education Policy and Equalising Opportunities</b></a>'
-    - title: Sciences Po Paris – M.Res. in Economics
+        - '<u>2022-2023:</u> Research research fellow at PSE <a href="https://www.parisschoolofeconomics.eu/en/pse-partnership-programme/chairs/education-policy-and-social-mobility-chair/" target="_blank">Education Policy and Social Mobility Chair</a>.'
+        - '<u>Visiting (Spring 2022):</u> <a href="https://www.ucl.ac.uk/ioe/departments-and-centres/centres/centre-education-policy-and-equalising-opportunities" target="_blank">UCL Centre for Education Policy and Equalising Opportunities</a>'
+    - title: Sciences Po Paris <br> <i>M.Res. in Economics</i>
       year: 2015-17
       description:
-        - '<u>Masters Thesis:</u> <a href="https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/files/Gustave%20Kenedi%20-%20Me%CC%81moire.pdf" target="_blank"><b>Intergenerational Income Mobility in France: National and Territorial Estimates</b></a>'
-        - '<u>Advisor:</u> <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank"><b>Pierre-Philippe Combes</b></a> and <a href="https://www.strategie.gouv.fr/membres/clement-dherbecourt" target="_blank"><b>Clément Dherbécourt</b></a>'
-    - title: King's College London – B.Sc. in Political Economy
+        - '<u>Masters Thesis:</u> <a href="https://www.sciencespo.fr/ecole-doctorale/sites/sciencespo.fr.ecole-doctorale/files/Gustave%20Kenedi%20-%20Me%CC%81moire.pdf" target="_blank">Intergenerational Income Mobility in France: National and Territorial Estimates</a>'
+        - '<u>Advisor:</u> <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank">Pierre-Philippe Combes</a> and <a href="https://www.strategie.gouv.fr/membres/clement-dherbecourt" target="_blank">Clément Dherbécourt</a>'
+    - title: King's College London <br> <i>B.Sc. in Political Economy</i>
       year: 2012-15
       description:
-        - '<u>Undergraduate Thesis:</u> <b>Minimum Wages, Labour Market Policies, and Youth Employment: A Re-Evaluation Using Cross-Country Analysis</b>'
-        - '<u> Study Abroad (Jan. 2014-May 2014):</u> <a href="https://www.unc.edu/" target="_blank"><b>University of North Carolina, Chapell Hill</b></a>'
+        - '<u>Undergraduate Thesis:</u> <i>Minimum Wages, Labour Market Policies, and Youth Employment: A Re-Evaluation Using Cross-Country Analysis</i>'
+        - '<u> Study Abroad (Jan. 2014-May 2014):</u> <a href="https://www.unc.edu/" target="_blank">University of North Carolina, Chapell Hill</a>'
 
 - title: Work Experience
   type: table
