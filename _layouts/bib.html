@@ -122,6 +122,15 @@
     {% if entry.code %}
       <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Code</a>
     {% endif %}
+    {% if entry.policyfr %}
+      <a href="{{ entry.policyfr }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Brief (FR)</a>
+    {% endif %}
+    {% if entry.policyen %}
+      <a href="{{ entry.policyen }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Brief (EN)</a>
+    {% endif %}
+    {% if entry.voxeu %}
+      <a href="{{ entry.voxeu }}" class="btn btn-sm z-depth-0" role="button" target="_blank">VoxEU</a>
+    {% endif %}
     {% if entry.poster %}
       {% if entry.poster contains '://' %}
       <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
