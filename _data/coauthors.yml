@@ -1,34 +1,53 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"sirugue":
+  - firstname: ["Louis", "L."]
+    url: https://www.louissirugue.com/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"dherbecourt":
+  - firstname: ["Clément", "C."]
+    url: https://www.strategie.gouv.fr/membres/clement-dherbecourt
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"bechichi":
+  - firstname: ["Nagui", "N."]
+    url: https://clean-earwig-92d.notion.site/Research-7b583a9a14b64d618a435081160667ad
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"jamet":
+  - firstname: ["Stéphanie", "S."]
+    url: https://fr.linkedin.com/in/stephanie-jamet-a9326144
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"minea-pic":
+  - firstname: ["Andreea", "A."]
+    url: https://fr.linkedin.com/in/andreea-minea-ba460a55
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"grundke":
+  - firstname: ["Robert", "R."]
+    url: https://sites.google.com/site/robertgrundke
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"squicciarini":
+  - firstname: ["Mariagrazia", "M."]
+    url: https://fr.linkedin.com/in/mariagrazia-squicciarini-9a607bba
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"mountford-zimdars":
+  - firstname: ["Anna", "A."]
+    url: https://socialsciences.exeter.ac.uk/education/staff/profile/index.php?web_id=Anna_Mountford-Zimdars
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"foliano":
+  - firstname: ["Francesca", "F."]
+    url: https://sites.google.com/site/francescafoliano1/home?authuser=0
+
+"mcnally":
+  - firstname: ["Sandra", "S."]
+    url: https://cep.lse.ac.uk/_new/people/person.asp?id=743
+
+"silva":
+  - firstname: ["Olmo", "O."]
+    url: https://personal.lse.ac.uk/silvao/
+
+"cassagneau-francis":
+  - firstname: ["Oliver", "O."]
+    url: https://opmc2.github.io/
+
+"wyness":
+  - firstname: ["Gill", "G."]
+    url: https://profiles.ucl.ac.uk/48157-gill-wyness
+
+
