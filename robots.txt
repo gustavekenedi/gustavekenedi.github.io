@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://gustavekenedi.github.io/al-folio/sitemap.xml
+Sitemap: https://gustavekenedi.github.io/sitemap.xml
