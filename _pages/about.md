@@ -26,4 +26,4 @@ My research interests are in **intergenerational mobility**, in particular its *
 
 I obtained my **PhD in Economics** in Nov. 2023 from <a href="https://www.sciencespo.fr/department-economics/en.html" target="_blank">`Sciences Po`</a>, under the delightful supervision of <a href="https://sites.google.com/view/pierrephilippecombes" target="_blank">`Pierre-Philippe Combes`</a>.  During the 2022-23 academic year, I was a research fellow at PSE's <a href="https://www.parisschoolofeconomics.eu/en/pse-partnership-programme/chairs/education-policy-and-social-mobility-chair/" target="_blank">`Education Policy and Social Mobility Chair`</a>.
 
-**You can find my CV <a href="assets/pdf/kenedi_cv.pdf" target="_blank">here</a>.**
+**You can find my CV <a href="assets/pdf/kenedi_cv.pdf" target="_blank">here</a> and my job market paper <a href="https://gustavekenedi.github.io/assets/pdf/bechichi_kenedi_older_schoolmate_jmp.pdf" target="_blank">here</a>.**
