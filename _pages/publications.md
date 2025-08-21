@@ -9,16 +9,6 @@ nav: true
 nav_order: 2
 ---
 
-### job market paper
-<!-- _pages/publications.md -->
-<div class="publications">
-
-  {% for y in page.years %}
-    <!-- <h2 class="year">{{y}}</h2> -->
-    {% bibliography -f jmp -q @*[year={{y}}]* %}
-  {% endfor %}
-</div>
-
 ### publications
 <!-- _pages/publications.md -->
 <div class="publications">
