@@ -1,36 +1,49 @@
-# Gustave Kenedi — academic website
+# gustavekenedi.github.io
 
-A single-page static site. No build step, no dependencies, no toolchain.
-Edit the HTML, commit, push. That's the whole workflow.
+My academic website. A single hand-written HTML page — no build step, no
+dependencies, no toolchain. Edit, commit, push.
+
+Live at <https://gustavekenedi.github.io>.
 
 ```
 index.html      the entire site (About · News · Research · Policy · Teaching)
-style.css       all styling — the palette lives in the :root block at the top
-scrollspy.js    ~30 lines, highlights the nav link for the section you're reading
+style.css       all styling — the palette is the :root block at the top
+scrollspy.js    ~30 lines; highlights the nav link for the section you're reading
 images/         profile photo and favicons
 files/          CV and paper PDFs
 research/  policy/  teaching/  news/  cv/
-                one-line redirect stubs, so old links to /research/ etc. still work
-.nojekyll       tells GitHub Pages to serve the files as-is
+                redirect stubs — see "Redirect stubs" below
+.nojekyll       stops GitHub Pages running Jekyll over these files. Do not delete.
 ```
 
-## Previewing locally
+## Editing and publishing
+
+This repo *is* the website. There is no separate source folder and no build:
 
 ```bash
-cd static_website
-python3 -m http.server 8765
+# edit index.html / style.css, then
+python3 -m http.server 8765        # preview at http://127.0.0.1:8765
+git add -A && git commit -m "..." && git push
 ```
 
-Then open <http://127.0.0.1:8765>. Reload after each save — and use a **hard
-reload** (`Cmd+Shift+R`) after editing `style.css`, or the browser will keep
-serving the cached stylesheet and your change won't appear.
+GitHub Pages serves this repo's `main` branch from the root directory, so a
+push is a deploy. Changes appear within a minute.
 
-(Opening `index.html` directly with `file://` also works, but the `/research/`
-redirects won't.)
+Use a **hard reload** (`Cmd+Shift+R`) after editing `style.css`, locally and on
+the live site — otherwise the browser keeps serving the cached stylesheet.
+
+## How this repo is deployed (worth knowing)
+
+This repo used to hold a Jekyll (al-folio) site built by a GitHub Action
+(`.github/workflows/deploy.yml`) and served from a `gh-pages` branch. That is
+all gone: the workflows were deleted and GitHub Pages was switched in
+**Settings → Pages** to serve **main / root** directly.
+
+The old site is still recoverable at the `jekyll-site-final` tag.
 
 ## Everyday editing
 
-All of it happens in `index.html`. Each block has a comment above it showing
+Everything happens in `index.html`. Each block has a comment above it showing
 what to copy.
 
 **Add a news item** — copy a `.news-item` block into the top of `#news`, and
@@ -47,12 +60,11 @@ delete the oldest; the list is kept to the five most recent:
 
 ```html
 <article class="paper">
-  <p class="ptitle"><a href="files/my_paper.pdf">Title of the Paper</a></p>
+  <p class="ptitle"><a href="files/my_paper.pdf" target="_blank" rel="noopener">Title of the Paper</a></p>
   <p class="pline"><span class="jrnl">Journal Name</span>, 2027 <span class="auth">· with Coauthor</span></p>
   <p class="plinks">
-    <a href="...">PDF</a>
-    <a href="...">Replication package</a>
-    <a href="...">Policy brief</a>
+    <a href="..." target="_blank" rel="noopener">PDF</a>
+    <a href="..." target="_blank" rel="noopener">Replication package</a>
   </p>
   <details class="abs"><summary>Abstract</summary>
     <div>The abstract text.</div>
@@ -60,28 +72,46 @@ delete the oldest; the list is kept to the five most recent:
 </article>
 ```
 
-Conventions worth keeping, because every entry on the page follows them:
+Conventions every entry on the page follows:
 
 - `.jrnl` (the blue) wraps the **venue**, never the status. Year or status
   follows in plain text: `Journal of Human Resources, accepted`.
-- `.plinks` buttons are labelled `PDF`, `Replication package`, `Policy brief`,
-  `Slides`. They wrap onto new lines on their own, so add as many as you like.
-- Coauthor names are linked to their own sites where one exists.
+- Button labels are `PDF`, `Replication package`, `Policy brief`, `Slides`.
+  They wrap onto new lines on their own, so add as many as you like.
+- Coauthor names link to their own sites where one exists.
+- Every link that leaves the page or opens a PDF carries
+  `target="_blank" rel="noopener"`. Only `#anchors` and `mailto:` stay in-tab.
 - Every part is optional — drop `.plinks` if there are no links, drop the
   `<details>` if there's no abstract.
 - `<span class="newtag">New</span>` after a title renders a small badge. The
-  style is there but currently unused.
+  style exists but is currently unused.
 
 **Add a course** — copy an `<article class="course">` block in `#teaching`.
-`.cterm` is the small pill after the title; courses carry two (level, then
-years): `<span class="cterm">Undergraduate</span><span class="cterm">2026–</span>`.
+`.cterm` is the small pill after the title; courses carry two — level, then
+years: `<span class="cterm">Undergraduate</span><span class="cterm">2026–</span>`.
 Use `<span class="soon">Slides coming soon</span>` in place of a link button
 for material that isn't ready.
 
-**Update the CV** — replace `files/kenedi_cv.pdf`, keeping the filename.
+**Update the CV** — replace `files/kenedi_cv.pdf`, keeping the filename, then
+commit and push. (Replacing the file alone changes nothing until you push.)
 
 **Add a section** — add a `<section id="newthing" class="wrap">` and a matching
 `<a href="#newthing">` in the nav. The scrollspy picks it up automatically.
+
+## Redirect stubs
+
+`research/`, `news/`, `teaching/` and `cv/` each contain a one-file
+`index.html` that does nothing but bounce the visitor to the matching anchor on
+the homepage — `/research/` → `/#research`.
+
+They exist because the old Jekyll site served those as real pages, two of them
+in its navigation. Anything still linking to them — a bookmark, a department
+page, a footer in one of your papers — would otherwise hit a 404. They cost
+about 400 bytes each and can be deleted once you're confident nothing points at
+the old URLs.
+
+There is deliberately **no stub for `/policy`**: that URL never existed on the
+old site, so nothing can be linking to it.
 
 ## Restyling
 
@@ -103,89 +133,35 @@ labels, venue names and every hover state at once.
 
 ## Images
 
-- `images/prof_pic.jpeg` — 1106×1500 (344 KB). Deliberately larger than the
-  180×230 it displays at, so it stays sharp on retina screens, makes a decent
-  social-preview card, and is usable by anyone who saves it for a seminar
-  announcement or conference programme.
-- `images/prof_pic_original.jpeg` — the untouched 1500×2034 original. Keep it;
-  it's the source for regenerating the above.
-- `images/favicon.svg` / `favicon.png` / `apple-touch-icon.png` — the 🙋‍♂️
+- `images/prof_pic.jpeg` — 1289×1393 (428 KB), the displayed photo. Deliberately
+  larger than the 180×230 it renders at, so it stays sharp on retina screens,
+  makes a decent social-preview card, and is usable by anyone who saves it for a
+  seminar announcement or conference programme.
+- `images/prof_pic_original_cropped.jpeg` — the crop `prof_pic.jpeg` is made
+  from. This is the current source.
+- `images/prof_pic_original.jpeg` — the untouched 1500×2034 original, kept as
+  the master in case a different crop is ever wanted.
+- `images/favicon.svg` / `favicon.png` / `apple-touch-icon.png` — the 🙋🏻‍♂️
   favicon. The PNGs were rendered from the Apple Color Emoji font rather than
-  drawn from the SVG, because the emoji is a ZWJ sequence some browsers render
-  as two glyphs. To change the emoji you need to regenerate the PNGs, not just
-  edit the SVG.
-- `images/favicon-old-backup.png` — the previous favicon. Safe to delete.
+  drawn from the SVG, because the emoji is a ZWJ sequence with a skin-tone
+  modifier that browsers render inconsistently. **Editing `favicon.svg` alone
+  will not change the icon** — the PNGs have to be regenerated too.
 
-To resize the photo from the original:
+To regenerate the displayed photo after re-cropping:
 
 ```bash
 cd images
-cp prof_pic_original.jpeg prof_pic.jpeg
-sips -Z 1500 prof_pic.jpeg --setProperty formatOptions 92
+cp prof_pic_original_cropped.jpeg prof_pic.jpeg
+sips -s format jpeg --setProperty formatOptions 92 prof_pic.jpeg
 ```
 
-## Publishing
-
-**Read this before pushing anything.** The `gustavekenedi.github.io` repo does
-not serve files from `main`. A GitHub Action (`.github/workflows/deploy.yml`)
-builds the Jekyll site on every push to `main` and deploys the result to a
-`gh-pages` branch — and GitHub Pages serves *that*. So copying static files
-into `main` publishes nothing; the Action just fails and the old site keeps
-serving.
-
-Publishing therefore means switching Pages to serve `main` directly.
-
-```bash
-cd ~/Dropbox/1areas/website
-
-# 1. Tag the current Jekyll site so it is easy to find again
-cd gustavekenedi.github.io
-git tag jekyll-site-final && git push origin jekyll-site-final
-
-# 2. Replace the repo contents (keeps .git, removes everything else,
-#    including .github/workflows — those would fail without Jekyll sources)
-cd ..
-rsync -av --delete --exclude '.git' static_website/ gustavekenedi.github.io/
-
-# 3. Review, then commit
-cd gustavekenedi.github.io
-git status
-git add -A
-git commit -m "Replace Jekyll site with single-page static site"
-git push origin main
-```
-
-At this point the live site is **still the old one** — nothing has changed for
-visitors yet. The cutover is a setting, done in the browser:
-
-4. GitHub → the repo → **Settings** → **Pages**
-5. Under **Build and deployment**, set Source to **Deploy from a branch**,
-   Branch to **main**, folder **/ (root)**, and Save.
-
-Give it a minute, then check <https://gustavekenedi.github.io> in a private
-window (a normal window may show a cached copy).
-
-Once it looks right, the `gh-pages` branch is dead weight and can go:
-
-```bash
-git push origin --delete gh-pages
-```
-
-`.nojekyll` in the repo root is what stops GitHub trying to run Jekyll over
-these files. Do not delete it.
-
-### If something goes wrong
-
-Nothing is lost — the Jekyll site is in git history and at the
-`jekyll-site-final` tag. To go back, set Pages Source to **gh-pages** in
-Settings (the old build is still sitting on that branch), then sort out `main`
-at your leisure.
+Don't pass `sips -Z <n>` with an `n` larger than the source — it upscales,
+which adds no detail and inflates the file.
 
 ## Known gaps
 
 Small things deliberately left undone, in case they ever matter:
 
-- **No Google Scholar link** anywhere on the site.
 - **No print stylesheet.** Abstracts are `<details>` elements, which print
   collapsed — so printing the Research section loses every abstract.
 - **Subsection labels** (`Publications`, `Working Papers`, `Policy Briefs`…)
