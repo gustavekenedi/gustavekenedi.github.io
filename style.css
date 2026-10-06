@@ -232,6 +232,13 @@ details.abs > div{
   font-size:10.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
   color:var(--faint); background:rgba(31,78,121,.07);
 }
+.cyears{
+  display:inline-block; vertical-align:middle; position:relative; top:-1px;
+  margin-left:9px;
+  font-size:12.5px; font-weight:500; letter-spacing:.01em;
+  color:var(--faint); font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
 .cline{ font-size:14.5px; color:var(--muted); line-height:1.5; margin:0 }
 
 /* ------------------------------------------------------------- footer ---- */
